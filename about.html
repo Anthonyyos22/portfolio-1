@@ -7,110 +7,133 @@
     <link rel="icon" href="assets/yos.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <nav class="navbar">
+    <!-- Navigation Header -->
+    <header class="main-header">
         <div class="container">
-            <a href="index.html" class="logo">Joseph Kiama</a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </button>
+            <h1 class="header-title">Joseph Kiama</h1>
+            <p class="header-subtitle">Full Stack Developer & Digital Creator</p>
+            
+            <nav class="navbar">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" title="Toggle Navigation Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <section class="about-section">
-        <div class="container">
-            <div class="about-content">
-                <h2>About <span>Me</span></h2>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p class="intro">
-                            I'm a passionate Full Stack Developer and UI/UX Designer
-                            based in Nairobi, Kenya with over 3 years of experience creating digital solutions.
-                        </p>
-                        <p>
-                            My tech journey began when I built my first website at 19, and since then I've developed 
-                            intrest across the entire web development stack. I specialize in creating responsive, 
-                            accessible, and performant web applications.
-                        </p>
-                        <p>
-                            When I'm not coding, you'll find me writing technical articles,designing and attending tech events , 
-                            or exploring new design trends. I believe in continuous learning and sharing knowledge 
-                            with the community.
-                        </p>
-                        <div class="personal-info">
-                            <div>
-                                <span>Name:</span>
-                                <p>Joseph Kiama</p>
-                            </div>
-                            <div>
-                                <span>Email:</span>
-                                <p>kiamajoseph11@gmail.com.com</p>
-                            </div>
-                            <div>
-                                <span>Education:</span>
-                                <p>Bachelors OF Business and Information Technologu</p>
-                            </div>
-                            <div>
-                                <span>Freelance:</span>
-                                <p>Available</p>
-                            </div>
-                        </div>
-                        <a href="projects.html" class="btn btn-primary">View My Projects</a>
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="animate__animated animate__fadeInDown">Building The Digital Future</h1>
+                        <p class="animate__animated animate__fadeInUp">Code • Design • Secure • Create</p>
                     </div>
-                    <div class="skills-section">
-                        <h3>My <span>Skills</span></h3>
-                        <div class="skills-container">
-                            <div class="skill-category">
-                                <h4><i class="fas fa-code"></i> Development</h4>
-                                <ul>
-                                    <li>HTML5/CSS3</li>
-                                    <li>JavaScript (ES6+)</li>
-                                    <li>React.js/express</li>
-                                    <li>Node.js</li>
-                                    <li>Python/Django</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h4><i class="fas fa-paint-brush"></i> Design</h4>
-                                <ul>
-                                    <li>UI/UX Design</li>
-                                    <li>Figma/Adobe XD</li>
-                                    <li>Responsive Design</li>
-                                    <li>Graphic Design</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h4><i class="fas fa-tools"></i> Other</h4>
-                                <ul>
-                                    <li>Technical Writing</li>
-                                    <li>Git Version Control</li>
-                                    <li>Agile Methodology</li>
-                                    <li>DevOps Basics</li>
-                                </ul>
+                    <div class="hero-image">
+                        <img src="assets/me😎.jpg" alt="Joseph Kiama" class="animate__animated animate__fadeIn">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="info-card animate__animated animate__fadeInLeft">
+                            <h3><i class="fas fa-user-ninja"></i> My Tech Journey</h3>
+                            <div class="text-sections">
+                                <div class="text-section background-image-about">
+                                    <p class="cool-paragraph">
+                                        I'm a <span class="highlight">multi-disciplinary tech professional</span> passionate about building digital solutions. 
+                                        As a <span class="highlight">Cisco Certified Network Associate (CCNA)</span>, I bring network expertise to every project. 
+                                        Currently advancing my skills as part of the <span class="highlight">2025 PLP Cohort</span> and <span class="highlight">Ajira Digital Cybersecurity Program</span>, 
+                                        I'm committed to creating secure, robust applications.
+                                    </p>
+                                </div>
+                                <div class="text-section me-image">
+                                    <p class="cool-paragraph">
+                                        By day, I craft beautiful, functional full-stack applications. By night, I share my knowledge as a <span class="highlight">tech content creator</span>, 
+                                        breaking down complex concepts into digestible lessons. My unique blend of <span class="highlight">development skills</span>, 
+                                        <span class="highlight">security awareness</span>, and <span class="highlight">creative communication</span> allows me to 
+                                        bridge technical and user perspectives effectively.
+                                    </p>
+                                </div>
+                                <div class="text-section full-width">
+                                    <p class="cool-paragraph">
+                                        Whether I'm debugging code, configuring networks, or creating educational content, I approach every challenge with 
+                                        <span class="highlight">curiosity</span> and <span class="highlight">attention to detail</span>. My diverse experience helps me 
+                                        understand projects from multiple perspectives - from infrastructure to interface.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+        <section class="background-section">
+            <div class="container">
+                <div class="background-content">
+                    <h2>My Approach</h2>
+                    <div class="approach-grid">
+                        <div class="approach-card">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Development</h3>
+                            <p>Clean, maintainable code with modern frameworks</p>
+                        </div>
+                        <div class="approach-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Security</h3>
+                            <p>Security-first mindset in all implementations</p>
+                        </div>
+                        <div class="approach-card">
+                            <i class="fas fa-pencil-ruler"></i>
+                            <h3>Design</h3>
+                            <p>User-centered interfaces that delight</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>&copy; <span id="currentYear"></span> Joseph Kiama. All rights reserved.</p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Joseph Kiama</h3>
+                    <p>Full Stack Developer & Digital Creator</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="#" title="GitHub Profile"><i class="fab fa-github"></i></a>
+                    <a href="#" title="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram Profile"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Joseph Kiama. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 

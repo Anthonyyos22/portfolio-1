@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me | Joseph Kiama</title>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -19,12 +19,12 @@
         <div class="container">
             <a href="index.html" class="logo">Joseph Kiama</a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="projects.html" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="contact.html" class="nav-link active"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
-            <button class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
                 <div class="hamburger-line"></div>
                 <div class="hamburger-line"></div>
                 <div class="hamburger-line"></div>
@@ -32,145 +32,150 @@
         </div>
     </nav>
 
-    <!-- Main Contact Section -->
-    <section class="contact-section">
-        <div class="container">
-            <h2 class="animate__animated animate__fadeInDown">Let's <span>Connect</span></h2>
-            <p class="section-subtitle animate__animated animate__fadeIn animate__delay-1s">Have a project in mind or want to collaborate? Drop me a message!</p>
-            
-            <div class="contact-container">
-                <!-- Contact Info Card with 3D Tilt Effect -->
-                <div class="contact-info glass" data-tilt>
-                    <div class="contact-method animate__animated animate__fadeInLeft">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>kiamajoseph11@gmail.com</p>
-                            <button class="copy-btn" data-clipboard-text="kiamajoseph11@gmail.com">
-                                <i class="far fa-copy"></i> Copy
-                            </button>
-                        </div>
-                    </div>
-                    <div class="contact-method animate__animated animate__fadeInLeft animate__delay-1s">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+254 745910500</p>
-                            <button class="copy-btn" data-clipboard-text="+254745910500">
-                                <i class="far fa-copy"></i> Copy
-                            </button>
-                        </div>
-                    </div>
-                    <div class="contact-method animate__animated animate__fadeInLeft animate__delay-2s">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Nairobi, Kenya</p>
-                            <button class="map-btn" id="openMap">
-                                <i class="fas fa-map-marked-alt"></i> View Map
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <!-- Social Links with Hover Animation -->
-                    <div class="contact-social">
-                        <a href="#" class="social-icon" data-tooltip="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-icon" data-tooltip="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-icon" data-tooltip="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon" data-tooltip="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
+    <!-- Full Screen Contact Grid -->
+    <main class="contact-grid">
+        <!-- Contact Header Section -->
+        <section class="contact-header">
+            <div class="container">
+                <h1 class="animate__animated animate__fadeInDown">Get In Touch</h1>
+                <p class="animate__animated animate__fadeIn animate__delay-1s">Let's collaborate on your next project or just say hello!</p>
+            </div>
+        </section>
+
+        <!-- Contact Methods Grid -->
+        <div class="contact-methods">
+            <!-- Email Card -->
+            <div class="contact-card glass animate__animated animate__fadeInLeft">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
                 </div>
-                
-                <!-- Interactive Contact Form -->
-                <form class="contact-form glass animate__animated animate__fadeInRight" id="contactForm" data-tilt>
-                    <div class="form-group floating-label">
-                        <input type="text" id="name" required>
-                        <label for="name">Your Name</label>
-                        <span class="focus-border"></span>
-                    </div>
-                    <div class="form-group floating-label">
-                        <input type="email" id="email" required>
-                        <label for="email">Your Email</label>
-                        <span class="focus-border"></span>
-                    </div>
-                    <div class="form-group floating-label">
-                        <input type="text" id="subject">
-                        <label for="subject">Subject</label>
-                        <span class="focus-border"></span>
-                    </div>
-                    <div class="form-group floating-label">
-                        <textarea id="message" rows="5" required></textarea>
-                        <label for="message">Your Message</label>
-                        <span class="focus-border"></span>
-                    </div>
-                    
-                    <!-- Animated Submit Button -->
-                    <button type="submit" class="btn btn-primary btn-animate">
-                        <span class="btn-text">Send Message</span>
-                        <span class="btn-icon">
-                            <i class="fas fa-paper-plane"></i>
-                        </span>
-                        <span class="btn-success">
-                            <i class="fas fa-check"></i> Sent!
-                        </span>
+                <h3>Email Me</h3>
+                <p class="contact-detail">kiamajoseph11@gmail.com</p>
+                <div class="contact-actions">
+                    <button class="copy-btn" data-clipboard-text="kiamajoseph11@gmail.com">
+                        <i class="far fa-copy"></i> Copy
                     </button>
-                    
-                    <!-- Form Status Indicator -->
-                    <div class="form-status" id="formStatus"></div>
+                    <a href="mailto:kiamajoseph11@gmail.com" class="email-btn">
+                        <i class="fas fa-paper-plane"></i> Send Email
+                    </a>
+                </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card glass animate__animated animate__fadeInUp">
+                <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3>Call Me</h3>
+                <p class="contact-detail">+254 745 910 500</p>
+                <div class="contact-actions">
+                    <button class="copy-btn" data-clipboard-text="+254745910500">
+                        <i class="far fa-copy"></i> Copy
+                    </button>
+                    <a href="tel:+254745910500" class="call-btn">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- WhatsApp Card -->
+            <div class="contact-card glass animate__animated animate__fadeInRight">
+                <div class="contact-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>WhatsApp</h3>
+                <p class="contact-detail">+254 796 471 777</p>
+                <div class="contact-actions">
+                    <button class="copy-btn" data-clipboard-text="+254796471777">
+                        <i class="far fa-copy"></i> Copy
+                    </button>
+                    <a href="https://wa.me/254796471777" class="whatsapp-btn" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i> Chat Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social Media Card -->
+            <div class="contact-card glass animate__animated animate__fadeInLeft animate__delay-1s">
+                <div class="contact-icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <h3>Social Media</h3>
+                <div class="social-grid">
+                    <a href="https://github.com/Anthonyyos22" class="social-item" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/josephmuriithi" class="social-item" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://instagram.com/_k.i.a.m.a" class="social-item" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-item" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Form Card -->
+            <div class="contact-card glass form-card animate__animated animate__fadeInRight animate__delay-1s">
+                <div class="contact-icon">
+                    <i class="fas fa-comment-dots"></i>
+                </div>
+                <h3>Send a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
                 </form>
             </div>
-        </div>
-    </section>
 
-    <!-- Interactive Map Modal -->
+            <!-- Location Card -->
+            <div class="contact-card glass animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Location</h3>
+                <p class="contact-detail">Nairobi, Kenya</p>
+                <div class="map-preview" id="mapPreview">
+                    <i class="fas fa-map"></i>
+                </div>
+                <button class="map-btn" id="viewMapBtn">
+                    <i class="fas fa-map-marked-alt"></i> View Full Map
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Map Modal -->
     <div class="map-modal" id="mapModal">
         <div class="modal-content glass">
             <span class="close-modal">&times;</span>
             <h3>My Location</h3>
             <div class="map-container">
-                <iframe id="embeddedMap" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808723567121!2d36.82115931475393!3d-1.288385835980925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d664d22a5f%3A0x9f4a1766a773d3b5!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                                        width="100%" height="450" class="map-iframe" allowfullscreen="" title="Map showing Nairobi, Kenya"></iframe>
             </div>
         </div>
     </div>
 
-    <!-- Floating Action Button -->
-    <div class="fab" id="fab">
-        <i class="fas fa-comment-dots"></i>
-    </div>
-
-    <!-- Chat Widget -->
-    <div class="chat-widget glass" id="chatWidget">
-        <div class="chat-header">
-            <h4>Quick Chat</h4>
-            <button class="close-chat">&times;</button>
-        </div>
-        <div class="chat-body" id="chatBody">
-            <div class="chat-message bot">
-                <p>Hi there! How can I help you today?</p>
-            </div>
-        </div>
-        <div class="chat-input">
-            <input type="text" placeholder="Type your message..." id="chatInput">
-            <button id="sendChat"><i class="fas fa-paper-plane"></i></button>
-        </div>
-    </div>
-
-    <!-- Glowing Footer -->
-    <footer class="glow">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="social-links">
-                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            </div>
             <p>&copy; <span id="currentYear"></span> Joseph Kiama. All rights reserved.</p>
         </div>
     </footer>
@@ -179,6 +184,6 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>

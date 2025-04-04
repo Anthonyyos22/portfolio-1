@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joseph Kiama | Full Stack Developer & Designer</title>
+    <title>Joseph Kiama | Full Stack Developer & Digital Creator</title>
+    <meta name="description" content="Professional portfolio of Joseph Kiama - Full Stack Developer, UI/UX Designer, and Digital Creator">
     <link rel="icon" href="assets/yos.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -11,51 +12,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
+    <!-- Background Elements -->
     <div class="particles-js" id="particles-js"></div>
     <div class="background-overlay"></div>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
     
-    <nav class="navbar">
+    <!-- Navigation -->
+    <nav class="navbar glass">
         <div class="container">
-            <a href="index.html" class="logo animate__animated animate__fadeIn">Joseph Kiama</a>
+            <a href="index.html" class="logo animate__animated animate__fadeIn">
+                <span class="logo-highlight">Joseph</span>Kiama
+            </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="projects.html" class="nav-link"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Menu">
-                <i class="fas fa-bars"></i>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
             </button>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content animate__animated animate__fadeInLeft">
+                <div class="intro-badge">
+                    <span>Full Stack Developer</span>
+                </div>
                 <h1>
                     <span class="intro-text">Hello, I'm</span><br>
                     <span class="name-highlight">Joseph Kiama</span>
                 </h1>
                 <div class="typewriter">
-                    <p class="tagline">Full Stack Developer & UI/UX Designer</p>
+                    <p class="tagline">Building digital experiences that <span class="text-rotate" data-rotate='["inspire", "engage", "convert", "delight"]'></span></p>
                 </div>
+                <p class="hero-description">
+                    I create elegant, performant web applications with cutting-edge technologies and 
+                    user-centered design principles. Let's turn your ideas into reality.
+                </p>
                 <div class="cta-buttons">
-                    <a href="projects.html" class="btn btn-primary">
-                        <i class="fas fa-code"></i> View My Work
+                    <a href="projects.html" class="btn btn-primary btn-animate">
+                        <span class="btn-text">View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
                     </a>
                     <a href="contact.html" class="btn btn-secondary">
                         <i class="fas fa-paper-plane"></i> Get In Touch
                     </a>
                 </div>
-                <div class="tech-stack">
-                    <span>Tech I work with:</span>
-                    <div class="tech-icons">
-                        <i class="fab fa-html5" title="HTML5"></i>
-                        <i class="fab fa-css3-alt" title="CSS3"></i>
-                        <i class="fab fa-js" title="JavaScript"></i>
-                        <i class="fab fa-react" title="React"></i>
-                        <i class="fab fa-node" title="Node.js"></i>
-                        <i class="fas fa-database" title="Databases"></i>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">1</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="5">3</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="100">5</div>
+                        <div class="stat-label">Clients</div>
                     </div>
                 </div>
             </div>
@@ -63,33 +87,175 @@
                 <div class="image-frame">
                     <div class="image-overlay"></div>
                     <img src="assets/yos.jpg" alt="Portrait of Joseph Kiama" loading="lazy">
+                    <div class="image-highlight"></div>
                 </div>
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
+                <div class="floating-tech-icons">
+                    <div class="tech-icon tech-icon-1">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="tech-icon tech-icon-2">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="tech-icon tech-icon-3">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="tech-icon tech-icon-4">
+                        <i class="fab fa-js"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="scroll-indicator">
-        <div class="mouse">
-            <div class="wheel"></div>
-        </div>
-        <span>Scroll down</span>
-    </div>
-
-    <footer>
+    <!-- Services Preview -->
+    <section class="services-preview">
         <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/anthonyyos" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/yourprofile" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://twitter.com/its_kiama" class="social-icon" aria-label="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-                <a href="https://dribbble.com/yourprofile" class="social-icon" aria-label="Dribbble" target="_blank" rel="noopener"><i class="fab fa-dribbble"></i></a>
+            <div class="section-header">
+                <h2 class="section-title">What I Do</h2>
+                <p class="section-subtitle">Comprehensive digital solutions tailored to your needs</p>
             </div>
-            <p>&copy; <span id="currentYear"></span> Joseph Kiama. All rights reserved.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom, responsive websites built with modern frameworks like React and Next.js</p>
+                    <div class="service-tech">
+                        <span>React</span>
+                        <span>Next.js</span>
+                        <span>TypeScript</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>App Development</h3>
+                    <p>Cross-platform mobile applications with React Native and Flutter</p>
+                    <div class="service-tech">
+                        <span>React Native</span>
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful, intuitive interfaces that enhance user experience</p>
+                    <div class="service-tech">
+                        <span>Figma</span>
+                        <span>Adobe XD</span>
+                        <span>Framer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Testimonials</h2>
+                <p class="section-subtitle">What people say about my work</p>
+            </div>
+            <div class="testimonial-carousel">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Joseph transformed our e-commerce platform with his technical expertise and attention to detail. The results exceeded our expectations.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image"></div>
+                        <div class="author-info">
+                            <h4>kiama muriithi</h4>
+                            <p>CEO, Travel with yos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Working with Joseph was a game-changer for our startup. He delivered our CMS project on time looking great</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image"></div>
+                        <div class="author-info">
+                            <h4>joseph kiama</h4>
+                            <p>Founder,cms</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-prev" title="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-next" title="Next Slide"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to start your project?</h2>
+                <p>Let's discuss how I can help bring your vision to life with cutting-edge technology and design.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-paper-plane"></i> Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-highlight">Joseph</span>Kiama
+                    </a>
+                    <p>Full Stack Developer & Digital Creator</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Me</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> kiamajoseph11@gmail.com</li>
+                        <li><i class="fas fa-phone-alt"></i> +254 745 910 500</li>
+                        <li><i class="fab fa-whatsapp"></i> +254 796 471 777</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Me</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/Anthonyyos22" class="social-icon" target="_blank" rel="noopener" title="GitHub Profile"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/josephmuriithi" class="social-icon" target="_blank" rel="noopener" title="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/its_kiama" class="social-icon" target="_blank" rel="noopener" title="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/_k.i.a.m.a" class="social-icon" target="_blank" rel="noopener" title="Instagram Profile"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Joseph Kiama. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
